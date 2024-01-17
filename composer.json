@@ -1,0 +1,17 @@
+{
+    "name": "alansnow/ciencia",
+    "autoload": {
+        "psr-4": {
+            "Alansnow\\Ciencia\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "Alan Vera",
+            "email": "alan.gomez24@unach.mx"
+        }
+    ],
+    "require": {
+        "bramus/router": "^1.6"
+    }
+}

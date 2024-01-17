@@ -1,0 +1,17 @@
+.contenedor-login {
+    margin-top: 100px;
+    min-height: 70vh;
+}
+
+.contenedor-form {
+    background-color: #122f51!important;
+}
+
+.formulario-login {
+    background-color: white!important;
+    padding: 30px 30px;
+}
+
+.form-pos {
+    margin: auto;
+}

@@ -1,0 +1,38 @@
+.txt-directorio-eclipse {
+    color: white;
+}
+
+.ctn-dir {
+    position: relative;
+}
+
+.img-directorio {
+    transition: all 0.1s ease;
+}
+
+.logos-dir {
+    opacity: 0;
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    padding: 5px;
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.8);
+    position: absolute;
+    bottom: 0;
+  text-align: center;
+  transition: all 0.4s ease;
+}
+
+.card:hover .logos-dir {
+    opacity: 10;
+}
+
+.logo-dir {
+    width: 20px;
+    fill: #31547c;
+}
+
+.logo-dir:hover {
+    fill: skyblue;
+}

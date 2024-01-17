@@ -1,0 +1,26 @@
+.btn-subir {
+    position: fixed;
+    bottom: 100px;
+    left: 90%;
+    height: 40px;
+    background-color: gray;
+    border: none;
+}
+
+.bi-caret-up-fill {
+    fill: white;
+}
+
+.btn-subir:hover {
+    background-color: #838689;
+}
+
+.btn-subir-none {
+    position: fixed;
+    bottom: 100px;
+    left: 90%;
+    height: 40px;
+    background-color: gray;
+    border: none;
+    visibility: hidden;
+}

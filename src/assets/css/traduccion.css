@@ -1,0 +1,56 @@
+
+.traducciones li {
+    display: block;
+    margin: 10px auto;
+    list-style: none;
+    border: 1px solid #122f51;
+    border-radius: 20px;
+    padding: 10px 10px;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.traducciones a {
+    text-decoration: none;
+    color: black;
+    padding-left: 35px;
+}
+
+.traduccion:hover {
+    background-color: #122f51;
+}
+
+.traduccion:hover a {
+    color: white;
+}
+
+
+
+/* Estilos en modo eclipse */
+
+.traducciones-eclipse li {
+    display: block;
+    margin: 10px auto;
+    list-style: none;
+    border: 1px solid white;
+    border-radius: 20px;
+    padding: 10px 10px;
+    width: 150px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.traducciones-eclipse a {
+    text-decoration: none;
+    color: white;
+    padding-left: 35px;
+}
+
+.traduccion-eclipse:hover {
+    background-color: black;
+}
+
+.traduccion-eclipse:hover a {
+    color: white;
+}

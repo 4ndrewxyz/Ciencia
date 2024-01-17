@@ -1,0 +1,166 @@
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+    background-image: url('../img/img-linea.jpg')!important;
+    background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
+.linea-menu {
+    padding: 10px;
+    background-color: black!important;
+}
+
+.linea-menu a:hover {
+    background-color: white!important;
+    color: black!important;
+}
+
+.contenedor {
+    margin-top: 40px;
+    position: relative;
+    width: 200px; /* Ajusta el tamaño del círculo según sea necesario */
+    height: 200px;
+    animation: girar 40s infinite linear;
+}
+
+@keyframes girar {
+    0% {
+        transform: rotate(0deg); /* Gira 0 grados al inicio */
+    }
+    100% {
+        transform: rotate(360deg); /* Gira 360 grados al final */
+    }
+}
+
+.circulo {
+    position: absolute;
+    width: 100px; /* Ajusta el tamaño de cada div según sea necesario */
+    height: 100px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.circulo:nth-child(1) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(0deg) translateX(240px);
+}
+
+.circulo:nth-child(2) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(72deg) translateX(240px);
+}
+
+.circulo:nth-child(3) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(144deg) translateX(240px);
+}
+
+.circulo:nth-child(4) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(216deg) translateX(240px);
+}
+
+.circulo:nth-child(5) {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(288deg) translateX(240px);
+}
+
+.modal-uno-hidden {
+    position: fixed; /* o absolute dependiendo de tus necesidades */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+    padding: 20px;
+    border: 1px solid #ccc;
+    z-index: 1000; /* Elige un valor mayor que los z-index de los otros elementos */
+    display: none; 
+}
+
+.modal-uno-normal {
+    position: fixed; /* o absolute dependiendo de tus necesidades */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px;
+    width: 350px;
+    height: 350px;
+    border: 1px solid #ccc;
+    border-radius: 30px;
+    z-index: 1000; /* Elige un valor mayor que los z-index de los otros elementos */
+}
+
+.img-mod {
+    margin: 10px auto;
+    display: block;
+    width: 100px;
+    height: 100px;
+}
+
+.txt-modal {
+    text-align: center;
+    font-size: 12px;
+    color: white;
+}
+
+.btn-modal {
+    margin-top: 120px;
+    background-color: #7052ff;
+    color: white;
+    padding: 5px;
+    border: none;
+    border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px)
+{
+    .contenedor {
+        width: 80px;
+    }
+    
+    .circulo {
+        width: 70px; /* Ajusta el tamaño de cada div según sea necesario */
+        height: 70px;
+    }
+    
+    .circulo:nth-child(1) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(0deg) translateX(110px);
+    }
+    
+    .circulo:nth-child(2) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(72deg) translateX(110px);
+    }
+    
+    .circulo:nth-child(3) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(144deg) translateX(110px);
+    }
+    
+    .circulo:nth-child(4) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(216deg) translateX(110px);
+    }
+    
+    .circulo:nth-child(5) {
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%) rotate(288deg) translateX(110px);
+    }
+}
