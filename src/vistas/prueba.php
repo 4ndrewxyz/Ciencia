@@ -5,7 +5,6 @@
 
     $contenido=new Contenido();
     $conectar=new Conexion();
-    $cache=new Cache();
 ?>
 <!DOCTYPE html>
 <html lang="en">

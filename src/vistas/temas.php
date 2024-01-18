@@ -106,7 +106,7 @@
         <section class="row">
         <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
               <a id="card-categoria" href="../videos/<?php echo $res['id']; ?>" class="card card-id card-principal shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="width: 18rem;">
-                <img src="" class="card-img-top" alt="...">
+                <img src="../src/assets/img/video.png" class="card-img-top" alt="..." style="width: 20%;">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
                     <h4 id="card-titulo" class="card-titulo card-title">Videos</h4>
@@ -119,7 +119,7 @@
 
             <div class="col-sm-12 col-md-6 col-lg-6 d-flex justify-content-center">
               <a id="card-categoria" href="../infografias/<?php echo $res['id']; ?>" class="card card-id card-principal shadow-sm p-3 mb-5 bg-body-tertiary rounded" style="width: 18rem;">
-                <img src="" class="card-img-top" alt="...">
+                <img src="../src/assets/img/infografia.png" class="card-img-top" alt="..." style="width: 20%">
                 <div class="card-body">
                   <div class="d-flex justify-content-between">
                     <h4 id="card-titulo" class="card-titulo card-title">Infografías</h4>

@@ -10,11 +10,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Objetivo</title>
+    <title>¿Qué es?</title>
     <link rel="stylesheet" href="src/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="src/assets/css/estilos.css">
-    <link rel="stylesheet" href="src/assets/css/traduccion.css">
     <link rel="stylesheet" href="src/assets/css/btnSubir.css">
+    <link rel="stylesheet" href="src/assets/css/traduccion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@300&display=swap" 
@@ -27,35 +27,37 @@
 
 <?php include 'navbar.php'; ?>
 
+
+
       <header id="header" class="header">
         <div id="header-eclipse" class="nada"></div>
         <div id="header-contenido" class="header-content">
-          <h1 class="text-center">Objetivo</h1>
+          <h1 class="text-center">Marco Legal</h1>
           <p class="text-center">Universidad Autónoma de Chiapas</p>
         </div>
       </header>
 
       <main class="container seccion-ctn">
         <section class="row seccion">
-          <div class="col-sm-12 col-md-4 col-lg-3" style="padding-bottom: 12vh;">
-              <h4 class="text-center mb-5">Traducciones</h4>
+            <div class="col-sm-12 col-md-4 col-lg-3" style="padding-bottom: 12vh;">
+                <h4 class="text-center mb-5">Traducciones</h4>
 
-              <ul id="traducciones" class="traducciones"> 
-                  <li id="traduccion" class="traduccion"><a href="">Español</a></li>
-                  <li id="traduccion" class="traduccion"><a href="">CH'ol</a></li>
-                  <li id="traduccion-2" class="traduccion"><a href="">Tojol-ab'al</a></li>
-                  <li id="traduccion-3" class="traduccion"><a href="">Tseltal</a></li>
-                  <li id="traduccion-4" class="traduccion"><a href="">Tsotsil</a></li>
-                  <li id="traduccion-5" class="traduccion"><a href="">Zoque</a></li>
-              </ul>
-          </div>
+                <ul id="traducciones" class="traducciones">
+                    <li id="traduccion" class="traduccion"><a href="">Español</a></li>
+                    <li id="traduccion" class="traduccion"><a href="">CH'ol</a></li>
+                    <li id="traduccion-2" class="traduccion"><a href="">Tojol-ab'al</a></li>
+                    <li id="traduccion-3" class="traduccion"><a href="">Tseltal</a></li>
+                    <li id="traduccion-4" class="traduccion"><a href="">Tsotsil</a></li>
+                    <li id="traduccion-5" class="traduccion"><a href="">Zoque</a></li>
+                </ul>
+            </div>
 
-          <div class="col-sm-12 col-md-8 col-lg-9">
+            <div class="col-sm-12 col-md-8 col-lg-9">
               <p id="txt-eclipse" class="txt-info" style="padding-top:12vh; padding-bottom: 12vh;">
-                Impulsar el mejoramiento del nivel de desarrollo sustentable de los municipios de la entidad a través de contenidos científicos dirigido a los municipios, principalmente aquellos de menor índice de desarrollo humano.
+                Ejemplo de marco legal
               </p>
-          </div>
-      </section>
+            </div>
+        </section>
       </main>
 
       <button id="btn-subir" class="btn-subir-none">
@@ -70,6 +72,6 @@
       <script src="src/assets/js/navbar.js"></script>
       <script src="src/assets/js/eclipseSeccion.js"></script>
       <script src="src/assets/js/btnSubir.js"></script>
-      <script src="src/assets/js/contenidoSecciones2.js"></script>
+      <script src="src/assets/js/contenidoSecciones.js"></script>
 </body>
 </html>

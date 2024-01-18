@@ -5,26 +5,15 @@
   $conectar = new Conexion();
   $tema = new Tema();
 ?>
-<!DOCTYPE html>
-<html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Círculo de Divs</title>
-    <link rel="stylesheet" href="src/assets/css/linea.css">
-    <link rel="stylesheet" href="src/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="src/assets/css/estilos.css">
-</head>
-<body>
 
-  <nav id="nav" class="navbar navbar-black navbar-expand-md navbar nav-color-inicio">
+<nav id="nav" class="navbar navbar-black navbar-expand-md navbar bg-color">
     <div class="container">
       <button class="navbar-toggler ms-auto" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-toggler" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbar-toggler">
         <a class="navbar-brand logo-nav" href="./">
-          <img src="src/assets/img/Cienciaabierta2blanco.png" width="50" alt="Logo de la página web">
+          <img src="src/assets/img/Cienciaabierta2blanco.png" width="50" alt="../src/assets/img/Cienciaabierta2blanco.png">
         </a>
         <ul class="navbar-nav d-flex justify-content-center align-items-center opciones-nav">
         <li class="nav-item dropdown nav-4">
@@ -35,9 +24,9 @@
                   <path d="M10.794 3.148a.217.217 0 0 1 .412 0l.387 1.162c.173.518.579.924 1.097 1.097l1.162.387a.217.217 0 0 1 0 .412l-1.162.387a1.734 1.734 0 0 0-1.097 1.097l-.387 1.162a.217.217 0 0 1-.412 0l-.387-1.162A1.734 1.734 0 0 0 9.31 6.593l-1.162-.387a.217.217 0 0 1 0-.412l1.162-.387a1.734 1.734 0 0 0 1.097-1.097l.387-1.162zM13.863.099a.145.145 0 0 1 .274 0l.258.774c.115.346.386.617.732.732l.774.258a.145.145 0 0 1 0 .274l-.774.258a1.156 1.156 0 0 0-.732.732l-.258.774a.145.145 0 0 1-.274 0l-.258-.774a1.156 1.156 0 0 0-.732-.732l-.774-.258a.145.145 0 0 1 0-.274l.774-.258c.346-.115.617-.386.732-.732L13.863.1z"/>
                 </svg>
             </a>
-            <ul id="menu" class="dropdown-menu linea-menu">
-              <li><a id="item-1" class="dropdown-item" href="que-es">¿Qué es?</a></li>
-              <li><a id="item-1" class="dropdown-item" href="linea-del-tiempo">Línea del tiempo</a></li>
+            <ul id="menu" class="dropdown-menu menu">
+            <li><a id="item-1" class="dropdown-item" href="que-es">¿Qué es?</a></li>
+              <li><a id="item-5" class="dropdown-item" href="linea-del-tiempo">Línea del tiempo</a></li>
               <li><a id="item-2" class="dropdown-item" href="marco-legal">Marco legal</a></li>
               <li><a id="item-3" class="dropdown-item" href="directorio">Directorio</a></li>
             </ul>
@@ -62,7 +51,7 @@
             <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               Contenido
             </a>
-            <ul id="menu" class="dropdown-menu linea-menu">
+            <ul id="menu-2" class="dropdown-menu menu">
               <?php
               $res = Tema::obtenerTemas($conectar);
               foreach ($res as $reg) {
@@ -73,24 +62,10 @@
               ?>
             </ul>
           </li>
+          <li id="btnModo" class="nav-item nav-5">
+            <a class="nav-link text-white" id="eclipse"><span>Eclipse</span></a>
+          </li>
         </ul>
       </div>
     </div>
   </nav>
-
-    <div class="contenedor">
-        <img class="circulo" id="circulo-1" src="src/assets/img/constellations-g556121f3b_1280.jpg" alt="">
-        <img class="circulo" id="circulo-2" src="src/assets/img/constellations-g556121f3b_1280.jpg" alt="">
-        <img class="circulo" id="circulo-3" src="src/assets/img/constellations-g556121f3b_1280.jpg" alt="">
-        <img class="circulo" id="circulo-4" src="src/assets/img/constellations-g556121f3b_1280.jpg" alt="">
-        <img class="circulo" id="circulo-5" src="src/assets/img/constellations-g556121f3b_1280.jpg" alt="">
-    </div>
-
-      <div id="modal-uno" class="modal-uno-hidden"></div>
-
-
-    <script src="src/assets/js/bootstrap.bundle.min.js"></script>
-    <script src="src/assets/js/circulo.linea.js"></script>
-</body>
-</html>
-

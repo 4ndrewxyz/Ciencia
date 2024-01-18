@@ -50,7 +50,7 @@
               <ul id="menu" class="dropdown-menu menu">
                 <li><a id="item-1" class="dropdown-item" href="que-es">¿Qué es?</a></li>
                 <li><a id="item-5" class="dropdown-item" href="linea-del-tiempo">Línea del tiempo</a></li>
-                <li><a id="item-2" class="dropdown-item" href="">Marco legal</a></li>
+                <li><a id="item-2" class="dropdown-item" href="marco-legal">Marco legal</a></li>
                 <li><a id="item-3" class="dropdown-item" href="directorio">Directorio</a></li>
               </ul>
             </li>

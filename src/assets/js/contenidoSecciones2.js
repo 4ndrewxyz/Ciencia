@@ -4,22 +4,20 @@ const txtLengua = document.querySelector('#txt-eclipse');
 lengua.forEach( item => {
     item.addEventListener('click', mostrarTexto);
 })
-
-//Este documento es encargado de las traducciones de la seccion de Que-es//
-
+// Este documento es enacargado de las traducciones de la seccion objetivo//
 function mostrarTexto(e) {
     e.preventDefault();
     lenguaNombre = e.target.textContent;
 
     if (lenguaNombre === "Español") {
         txtLengua.textContent = '';
-        txtLengua.textContent = 'Ciencia abierta. Comunicación del conocimiento es una plataforma digital que tiene contenidos científicos, culturales y humanísticos, con perspectiva de género y acceso a la información dirigida a las personas hablantes de Tseltal, Tsotsil, CHol, Tojol-abal y Zoque. \n Dos instituciones -El Centro de Estudios para el Desarrollo Municipal y Políticas Públicas de la Universidad Autónoma de Chiapas (CEDES-UNACH) y la Dirección de Comunicación del Conocimiento de la Universidad Autónoma Metropolitana (DCC-UAM) hacen sinergia con el Departamento de Atención a Grupos Étnicos del Instituto Chiapaneco de Educación para Jóvenes y Adultos (DAGE-ICHEJA) para generar productos audiovisuales con contenido traducido e interpretado, de manera especializada, a fin de comunicar el conocimiento a la comunidad chiapaneca.';
+        txtLengua.textContent = 'Impulsar el mejoramiento del nivel de desarrollo sustentable de los municipios de la entidad a través de contenidos científicos dirigido a los municipios, principalmente aquellos de menor índice de desarrollo humano.';
         return
     }
     
     if (lenguaNombre === "CH'ol") {
         txtLengua.textContent = '';
-        txtLengua.textContent = 'x';
+        txtLengua.textContent = 'y';
         return
     }
 

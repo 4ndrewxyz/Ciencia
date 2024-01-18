@@ -15,6 +15,8 @@ use Alansnow\Ciencia\controlador\AdminContenido;
 use Alansnow\Ciencia\controlador\AdminLenguas;
 use Alansnow\Ciencia\controlador\AdminTemas;
 use Alansnow\Ciencia\controlador\Directorio;
+use Alansnow\Ciencia\controlador\vistaMarco;
+use Alansnow\Ciencia\controlador\MarcoLegal;
 
 $router = new \Bramus\Router\Router();
 
@@ -27,6 +29,11 @@ $router->get('/', function() {
 $router->get('/que-es', function() {
     $queEs=new SeccionQEs();
     $queEs->queEs();
+});
+
+$router->get('/marco-legal', function() {
+   $MarcoLegal=new MarcoLegal();
+   $MarcoLegal->vistaMarco();
 });
 
 $router->get('/objetivo', function() {
