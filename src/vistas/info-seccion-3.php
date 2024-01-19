@@ -30,8 +30,8 @@
       <header id="header" class="header">
         <div id="header-eclipse" class="nada"></div>
         <div id="header-contenido" class="header-content">
-          <h1 class="text-center">Compromiso social</h1>
-          <p class="text-center">Universidad Autónoma de Chiapas</p>
+            <h1 class="text-center que-t">Compromiso<br>social</h1>
+          <p class="text-center que-es">Universidad Autónoma de Chiapas</p>
         </div>
       </header>
 

@@ -32,8 +32,8 @@
       <header id="header" class="header">
         <div id="header-eclipse" class="nada"></div>
         <div id="header-contenido" class="header-content">
-          <h1 class="text-center">Marco Legal</h1>
-          <p class="text-center">Universidad Autónoma de Chiapas</p>
+          <h1 class="text-center que-t">Marco Legal</h1>
+          <p class="text-center que-es">Universidad Autónoma de Chiapas</p>
         </div>
       </header>
 

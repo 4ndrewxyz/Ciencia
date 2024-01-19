@@ -17,6 +17,7 @@ use Alansnow\Ciencia\controlador\AdminTemas;
 use Alansnow\Ciencia\controlador\Directorio;
 use Alansnow\Ciencia\controlador\vistaMarco;
 use Alansnow\Ciencia\controlador\MarcoLegal;
+use Alansnow\Ciencia\controlador\CompromisoGaleria;
 
 $router = new \Bramus\Router\Router();
 
@@ -41,9 +42,15 @@ $router->get('/objetivo', function() {
    $objetivo->objetivo();
 });
 
+
 $router->get('/compromiso-social', function() {
    $compromiso=new CompromisoSocial();
    $compromiso->compromisoVista();
+});
+
+$router->get('/compromiso-galeria', function() {
+   $galeria=new CompromisoGaleria();
+   $galeria->galeriaVista();
 });
 
 $router->get('/linea-del-tiempo', function() {

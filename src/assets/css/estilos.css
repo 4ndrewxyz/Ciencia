@@ -24,8 +24,8 @@ top: 0;
 left: 0;
 width: 100%;
 z-index: 999;
-background-color: rgba(18, 47, 81, 0.5);
-transition: all 0.3s ease;
+background-color: rgb(18, 47, 81);
+transition: all 2s ease;
 }
 
 .navbar-scrolled-eclipse {
@@ -53,18 +53,15 @@ transition: all 0.3s ease;
   transition: transform 0.3s ease;
 }
 
-.logo-nav:hover {
-  transform: rotate(-10deg);
-  cursor: pointer;
+
+
+.unach_50{
+  padding-right: 2vh;
+  width: 3.8vw;
+  height: auto;
 }
 
-.logo-nav img {
-  transition: transform 0.3s ease;
-}
 
-.logo-nav:hover img {
-  transform: scale(1.1);
-}
 
 .opciones-nav li {
   transition: transform 0.7s ease, scale 0.7s ease;
@@ -140,6 +137,7 @@ transition: all 0.3s ease;
 }
 
 .header {
+  position: relative;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -150,13 +148,41 @@ transition: all 0.3s ease;
   background-size: cover;
   background-position: center center;
   min-height: 80vh;
-}    
+}
+
+.header::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.35); /* Adjust the overlay color and opacity as needed */
+}
 
 .header-content {
+  position: relative;
+  z-index: 1;
   padding: 20px;
   color: #ffffff; /* Color del texto */
   transition: opacity 0.3s ease-in-out;
 }
+
+.que-t {
+  font-family: 'Helvetica', Courier, monospace;
+  font-style: oblique;
+  font-size: 5vw;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+}
+
+.que-es {
+  font-family: 'Helvetica', Courier, monospace;
+  font-style: oblique;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+}
+
 
 .banner-logo {
   margin: 0 auto;
@@ -167,6 +193,7 @@ transition: all 0.3s ease;
 .img-header {
   display: block;
   width: 70%;
+  filter: blur(100);
 }
 
 h1 {
@@ -286,12 +313,30 @@ a {
 
 .redes-scs {
   display: flex;
-  gap: 10px;
+  gap: 20px;
   align-items: center;
 }
 
+.logo-redes {
+  fill: #ffffff;
+  transition-duration: 500ms;
+  cursor: pointer;
+  opacity: 1;
+}
+
 .logo-redes:hover {
-  fill: #FFD700;
+  opacity: 0.8;
+}
+
+.logo-redes:hover {
+  fill: #ffa600;
+  transition-duration: 500ms;
+  cursor: pointer;
+  opacity: 1;
+}
+
+.logo-50-unach{
+  padding-left: 10px;
 }
 
 /* Estilos en modo eclipse */
