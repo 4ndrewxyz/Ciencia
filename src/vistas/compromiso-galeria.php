@@ -45,9 +45,9 @@
             alt="Image 3">
         <img src="https://assets.codepen.io/210284/flower-9.jpg"
             alt="Image 4">
-        <img src="https://assets.codepen.io/210284/flower-1.jpg"
+        <img src="https://assets.codepen.io/210284/flower-10.jpg"
             alt="Image 5">
-        <img src="https://assets.codepen.io/210284/flower-2.jpg"
+        <img src="https://assets.codepen.io/210284/flower-6.jpg"
             alt="Image 6">
         <img src="https://assets.codepen.io/210284/flower-3.jpg"
             alt="Image 7">
