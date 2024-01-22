@@ -32,10 +32,11 @@
         <div id="header-eclipse" class="nada"></div>
         <div id="header-contenido" class="header-content">
           <h1 class="text-center que-t">Galeria</h1>
-          <p class="text-center que-es">Universidad Autónoma de Chiapas</p>
+          <p class="text-center que-es">Ciencia abierta comunicación del conocimiento</p>
         </div>
       </header>
 
+      <h1 id="titulo_galeria" class="titulo_galeria">Evento 10/09/23</h1>
     <div class="gallery" onclick="openLightbox(event)">
         <img src="https://assets.codepen.io/210284/flower-6.jpg"
             alt="Image 1">
@@ -43,18 +44,26 @@
             alt="Image 2">
         <img src="https://assets.codepen.io/210284/flower-8.jpg"
             alt="Image 3">
+        <p id="descripcion" class="descripcion">Descripcion del evento que tomo parte en la Universidad Autonoma de Chiapas en la biblioteca central el dia 10/09/23 con invitados especiales</p>
+    </div>
+
+    <h1 class="titulo_galeria"> Evento 27/10/23</h1>
+    <div class="gallery" onclick="openLightbox(event)">
         <img src="https://assets.codepen.io/210284/flower-9.jpg"
             alt="Image 4">
         <img src="https://assets.codepen.io/210284/flower-10.jpg"
             alt="Image 5">
         <img src="https://assets.codepen.io/210284/flower-6.jpg"
             alt="Image 6">
+    
         <img src="https://assets.codepen.io/210284/flower-3.jpg"
             alt="Image 7">
         <img src="https://assets.codepen.io/210284/flower-4.jpg"
             alt="Image 8">
         <img src="https://assets.codepen.io/210284/flower-5.jpg"
             alt="Image 9">
+        <p id="descripcion" class="descripcion">Descripcion del evento que tomo parte en la Universidad Autonoma de Chiapas en la biblioteca central el dia 10/09/23 con invitados especiales</p>
+
     </div>
 
     <!-- Lightbox container -->

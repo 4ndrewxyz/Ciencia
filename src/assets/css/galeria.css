@@ -1,4 +1,31 @@
 @import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond&family=DM+Mono:wght@400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap');
+
+.titulo_galeria{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    font-size: 5vh;
+    color: #424242;
+  }
+
+
+  .titulo-galeria-eclipse{
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 900;
+    font-size: 5vh;
+    color: #ffffff;
+  }
+
+  .descripcion{
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 7vh;
+  }
+
+  .descripcion-eclipse{
+    font-family: 'DM Sans', sans-serif;
+    padding-top: 7vh;
+    color: rgb(240, 240, 240);
+  }
 
 
 /* Basic styling for the gallery */
@@ -28,9 +55,11 @@
             margin: 10px;
             cursor: pointer;
             max-width: 300px;
+            max-height: 250px;
             width: 50%;
             height: 50%;
           border-radius: 10px;
+          object-fit: cover;
         }
 
         /* Lightbox styles */
@@ -57,7 +86,7 @@
 
         #close-btn {
             padding-left: 90vw;
-            padding-top: 10vh;
+            padding-top: 17vh;
             right: 10px;
             font-size: 50px;
             color: #fff;

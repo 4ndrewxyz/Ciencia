@@ -2,6 +2,7 @@
 const btnEclipse = document.querySelector('#eclipse');
 const nav = document.querySelector('#nav');
 const btnModo = document.querySelector('#btnModo');
+const menuUno = document.querySelector('#menu-1');
 const menu = document.querySelector('#menu');
 const menuDos = document.querySelector('#menu-2');
 const listaUno = document.querySelector('#item-1');
@@ -15,6 +16,7 @@ const headerContenido = document.querySelector('#header-contenido');
 const carouselUno = document.querySelector('#carousel');
 const carouselDos = document.querySelector('#carousel-2');
 const footer = document.querySelector('#footer');
+const titulo =document.querySelector('#titulo');
 const txtEclipse = document.querySelector('#txt-eclipse');
 const traducciones = document.querySelector('#traducciones');
 const traduccion = document.querySelector('#traduccion');
@@ -22,6 +24,7 @@ const traduccionDos = document.querySelector('#traduccion-2');
 const traduccionTres = document.querySelector('#traduccion-3');
 const traduccionCuatro = document.querySelector('#traduccion-4');
 const traduccionCinco = document.querySelector('#traduccion-5');
+const gallery = document.querySelector('#titulo_galeria');
 let body = document.body;
 
 // Función para cambiar el modo a "Normal" o "Eclipse"
@@ -32,6 +35,8 @@ function cambiarModo(modo) {
     nav.classList.add('nav-color');
     btnModo.classList.remove('nav-5');
     btnModo.classList.add('nav-cinco');
+    menuUno.classList.remove('menu')
+    menuUno.classList.add('menuEclipse');
     menu.classList.remove('menu');
     menu.classList.add('menuEclipse');
     menuDos.classList.remove('menu');
@@ -54,6 +59,8 @@ function cambiarModo(modo) {
     footer.classList.remove('foot-ctn');
     footer.classList.add('foot-ctn-eclipse');
     txtEclipse.classList.add('p-eclipse');
+    titulo.classList.remove('titulo');
+    titulo.classList.add('titulo-eclipse');
     traducciones.classList.remove('traducciones');
     traducciones.classList.add('traducciones-eclipse');
     traduccion.classList.remove('traduccion');
@@ -71,6 +78,8 @@ function cambiarModo(modo) {
     btnModo.classList.remove('nav-cinco');
     menu.classList.add('menu');
     menu.classList.remove('menuEclipse');
+    menuUno.classList.remove('menuEclipse');
+    menuUno.classList.add('menu');
     menuDos.classList.add('menu');
     menuDos.classList.remove('menuEclipse');
     listaUno.classList.remove('menuItem');
@@ -92,6 +101,8 @@ function cambiarModo(modo) {
     footer.classList.remove('foot-ctn-eclipse');
     txtEclipse.classList.remove('p-eclipse');
     traducciones.classList.add('traducciones');
+    titulo.classList.remove('titulo-eclipse');
+    titulo.classList.add('titulo');
     traducciones.classList.remove('traducciones-eclipse');
     traduccion.classList.add('traduccion');
     traduccion.classList.remove('traduccion-eclipse');

@@ -33,14 +33,14 @@
         <div id="header-eclipse" class="nada"></div>
         <div id="header-contenido" class="header-content">
             <h1 class="text-center que-t">¿Qué es?</h1>
-          <p class="text-center que-es">Universidad Autónoma de Chiapas</p>
+          <p class="text-center que-es">Ciencia abierta comunicación del conocimiento</p>
         </div>
       </header>
 
       <main class="container seccion-ctn">
         <section class="row seccion">
             <div class="col-sm-12 col-md-4 col-lg-3" style="padding-bottom: 12vh;">
-                <h4 class="text-center mb-5">Traducciones</h4>
+                <h4 id="titulo" class="titulo">Traducciones</h4>
 
                 <ul id="traducciones" class="traducciones">
                     <li id="traduccion" class="traduccion"><a href="">Español</a></li>

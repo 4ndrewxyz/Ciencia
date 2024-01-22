@@ -1,3 +1,9 @@
+.titulo {
+    color: rgb(27, 27, 27);
+    padding-left: 5vw;
+    padding-bottom: 5vh;
+    transition: all 0.5s ease;
+}
 
 .traducciones li {
     display: block;
@@ -28,6 +34,13 @@
 
 
 /* Estilos en modo eclipse */
+
+.titulo-eclipse{
+    color: rgb(255, 255, 255);
+    padding-left: 5vw;
+    padding-bottom: 5vh;
+    transition: all 0.5s ease;
+}
 
 .traducciones-eclipse li {
     display: block;

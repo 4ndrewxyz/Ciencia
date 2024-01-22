@@ -40,7 +40,7 @@
       <main class="container seccion-ctn">
         <section class="row seccion">
             <div class="col-sm-12 col-md-4 col-lg-3" style="padding-bottom: 12vh;">
-                <h4 class="text-center mb-5">Traducciones</h4>
+             <h4 id="titulo" class="titulo">Traducciones</h4>
 
                 <ul id="traducciones" class="traducciones">
                     <li id="traduccion" class="traduccion"><a href="">Español</a></li>
@@ -72,6 +72,6 @@
       <script src="src/assets/js/navbar.js"></script>
       <script src="src/assets/js/eclipseSeccion.js"></script>
       <script src="src/assets/js/btnSubir.js"></script>
-      <script src="src/assets/js/contenidoSecciones.js"></script>
+      <script src="src/assets/js/contenidoMarco.js"></script>
 </body>
 </html>

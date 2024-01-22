@@ -176,6 +176,14 @@ transition: all 2s ease;
   color: rgb(255, 255, 255);
 }
 
+.compromiso-social {
+  font-family: 'Helvetica', Courier, monospace;
+  font-style: oblique;
+  font-size: 4.2vw;
+  font-weight: 900;
+  color: rgb(255, 255, 255);
+}
+
 .que-es {
   font-family: 'Helvetica', Courier, monospace;
   font-style: oblique;
