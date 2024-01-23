@@ -58,8 +58,8 @@
             max-height: 250px;
             width: 50%;
             height: 50%;
-          border-radius: 10px;
-          object-fit: cover;
+            border-radius: 10px;
+            object-fit: cover;
         }
 
         /* Lightbox styles */

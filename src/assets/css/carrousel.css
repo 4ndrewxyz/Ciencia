@@ -1,13 +1,13 @@
 .marquesina-ctn {
     margin-top: 50px;
     width: 100%;
-    overflow: hidden;
+    overflow: hidden;   
 }
 
 .marquesinas {
     display: flex;
     gap: 40px;
-    animation: marquee 20s linear infinite;
+    animation: marquee 50s linear infinite;
 }
 
 .marquesina-img-uno:nth-child(1) {

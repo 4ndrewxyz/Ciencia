@@ -259,12 +259,19 @@ a {
 }
 
 .txt-carousel {
-  color: black;
+  margin-top: -40px;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 900;
+  font-size: 5vh;
+  color: #131313;
 }
 
 .txt-grilla {
   margin-top: 150px;
-  color: black;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 900;
+  font-size: 5vh;
+  color: #0f0f0f;
 }
 
 .seccion-grilla {
@@ -300,10 +307,23 @@ a {
 
 .opcion {
   position: relative;
+  justify-content: center;
+  padding: 5px;
+}
+
+.opcion img{
+  border-radius: 10px;
+  margin: 5px;
+  cursor: pointer;
+  object-fit: cover;
+  width: 260px;
+  height: 175px;
 }
 
 .opcion:hover img {
   filter: brightness(20%);
+  transform: translateY(-10px);
+  transition: transform 0.2s ease;
 }
 
 .opcion:hover .overlay {
@@ -348,6 +368,9 @@ a {
   transition-duration: 500ms;
   cursor: pointer;
   opacity: 1;
+  transform: translateY(-7px);
+  transition: transform 0.2s ease;
+  
 }
 
 .logo-50-unach{
