@@ -13,7 +13,7 @@
       </button>
       <div class="collapse navbar-collapse" id="navbar-toggler">
         <a class="navbar-brand logo-nav" href="./">
-          <img src="src/assets/img/logo_cedes.png" width="325" alt="../src/assets/img/Cienciaabierta2blanco.png">
+          <img src="src/assets/img/Cienciaabierta2blanco.png" width="65" alt="../src/assets/img/Cienciaabierta2blanco.png">
         </a>
         <ul class="navbar-nav d-flex justify-content-center align-items-center opciones-nav">
         <li class="nav-item dropdown nav-4">
@@ -72,8 +72,10 @@
             <a class="nav-link text-white" id="eclipse"><span>Eclipse</span></a>
           </li>
         </ul>
-        <img class="unach_50" src="src/assets/img/unach_50_blanco.png" width="32" alt="../src/assets/img/Cienciaabierta2blanco.png">
-        <img class="logo_cedes" src="src/assets/img/cedes.png" width="65" alt="">
+        <img class="unach_50" src="src/assets/img/unach_50_blanco.png" alt="../src/assets/img/Cienciaabierta2blanco.png">
+        <a href="https://www.cedes.unach.mx/">
+          <img class="logo_cedes" src="src/assets/img/cedes.png" alt="">
+        </a>
       </div>
     </div>
   </nav>

@@ -31,9 +31,8 @@
 <header id="header" class="header">
         <div id="header-eclipse" class="nada"></div>
         <div id="header-contenido" class="header-content">
-          <h1 class="text-center que-t">Galeria</h1>
-          <p class="text-center que-es">Ciencia abierta comunicación del conocimiento</p>
-        </div>
+          <h1 class="text-center que-t">Galería</h1>
+          <p class="text-center que-es">Ciencia abierta. Comunicación del conocimiento</p>        </div>
       </header>
 
       <h1 id="titulo_galeria" class="titulo_galeria">Evento 10/09/23</h1>
@@ -44,7 +43,7 @@
             alt="Image 2">
         <img src="https://assets.codepen.io/210284/flower-8.jpg"
             alt="Image 3">
-        <p id="descripcion" class="descripcion">Descripcion del evento que tomo parte en la Universidad Autonoma de Chiapas en la biblioteca central el dia 10/09/23 con invitados especiales</p>
+        <p id="descripcion" class="descripcion">Descripción del evento que tuvo lugar en la Universidad Autónoma de Chiapas en la Biblioteca Central el día 10/09/23 con invitados especiales</p>
     </div>
 
     <h1 class="titulo_galeria"> Evento 27/10/23</h1>
@@ -62,10 +61,22 @@
             alt="Image 8">
         <img src="https://assets.codepen.io/210284/flower-5.jpg"
             alt="Image 9">
-        <p id="descripcion" class="descripcion">Descripcion del evento que tomo parte en la Universidad Autonoma de Chiapas en la biblioteca central el dia 10/09/23 con invitados especiales</p>
+        <p id="descripcion" class="descripcion">Descripción del evento que tuvo lugar en la Universidad Autónoma de Chiapas en la Biblioteca Central el día 10/09/23 con invitados especiales</p>
 
     </div>
 
+    <h1 class="titulo_galeria"> Evento 14/11/23</h1>
+    <div class="gallery" onclick="openLightbox(event)">
+        <img src="https://assets.codepen.io/210284/flower-6.jpg"
+            alt="Image 1">
+        <img src="https://assets.codepen.io/210284/flower-7.jpg"
+            alt="Image 2">
+        <img src="https://assets.codepen.io/210284/flower-8.jpg"
+            alt="Image 3">
+        <p id="descripcion" class="descripcion">Descripción del evento que tuvo lugar en la Universidad Autónoma de Chiapas en la Biblioteca Central el día 10/09/23 con invitados especiales</p>
+
+    </div>
+    
     <!-- Lightbox container -->
     <div id="lightbox">
         <!-- Close button -->
@@ -80,7 +91,7 @@
         </div>
 
         <!-- Previous and Next buttons -->
-        <button id="prev-btn" onclick="changeImage(-1)">&lt; Anterior</button>
+        <button id="prev-btn" onclick="changeImage(-1)">&lt;Anterior</button>
         <button id="next-btn" onclick="changeImage(1)">Siguiente &gt;</button>
     </div>
 
@@ -91,7 +102,6 @@
       <script src="src/assets/js/navbar.js"></script>
       <script src="src/assets/js/galeria.js"></script>
       <script src="src/assets/js/eclipseSeccion.js"></script>
-      <script src="src/assets/js/btnSubir.js"></script>
       <script src="src/assets/js/contenidoSecciones3.js"></script>
 </body>
 </html>

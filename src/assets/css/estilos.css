@@ -50,17 +50,24 @@ transition: all 2s ease;
 .logo-nav {
   display: inline-block;
   position: relative;
+  margin-right: 16vw;
   transition: transform 0.3s ease;
 }
 
 
 
-.unach_50{
-  padding-right: 2vh;
-  width: 3.8vw;
+.unach_50 {
+  width: 2.8vw;
   height: auto;
+  margin-left: -5vw;
 }
 
+.logo_cedes {
+  width: 4.4vw;
+  height: auto;
+  margin-left: -5vw;
+  margin-right: -7vw;
+}
 
 
 .opciones-nav li {

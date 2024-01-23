@@ -39,7 +39,7 @@
           <a id="okay" class="text-white" href="">Entendido</a>
         </div>
         <div class="d-flex justify-content-center">
-          <img class="img-header" src="src/assets/img/Ciencia abierta1.png" alt="">
+          <img class="img-header" src="src\assets\img\logo_cedes.png" alt="">
         </div>
       </div>
     </header>

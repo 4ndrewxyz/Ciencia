@@ -32,8 +32,7 @@
         <div id="header-eclipse" class="nada"></div>
         <div id="header-contenido" class="header-content">
           <h1 class="text-center que-t">Comité creador</h1>
-          <p class="text-center que-es">Universidad Autónoma de Chiapas</p>
-        </div>
+          <p class="text-center que-es">Ciencia abierta. Comunicación del conocimiento</p>        </div>
       </header>
 
       <main class="container seccion-ctn">
