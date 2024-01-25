@@ -50,7 +50,7 @@
             justify-content: center;
             padding: 20px;
         }
-
+        
         .gallery img {
             margin: 10px;
             cursor: pointer;
@@ -75,6 +75,7 @@
             align-items: center;
             overflow: hidden;
             flex-direction: column;
+            z-index: 100;
         }
 
         #lightbox img {
@@ -82,16 +83,16 @@
             max-height: 60vh;
             box-shadow: 0 0 25px rgba(0, 0, 0, 0.8);
           border-radius: 10px;
+          z-index: 100;
         }
 
         #close-btn {
             padding-left: 90vw;
-            padding-top: 17vh;
-            right: 10px;
-            font-size: 50px;
+            margin-top: 29vh;
+            font-size: 65px;
             color: #fff;
             cursor: pointer;
-            z-index: 2;
+            z-index: 100;
         }
 
         /* Style for navigation buttons */

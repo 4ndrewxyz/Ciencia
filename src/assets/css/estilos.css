@@ -181,6 +181,7 @@ transition: all 2s ease;
   font-size: 5vw;
   font-weight: 900;
   color: rgb(255, 255, 255);
+  z-index: 1;
 }
 
 .compromiso-social {
@@ -322,6 +323,11 @@ a {
 
 .opcion:hover img {
   filter: brightness(20%);
+  transform: translateY(-10px);
+  transition: transform 0.2s ease;
+}
+
+.overlay:hover p{
   transform: translateY(-10px);
   transition: transform 0.2s ease;
 }

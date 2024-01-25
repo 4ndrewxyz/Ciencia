@@ -39,6 +39,11 @@
                 Temas
               </a>
             </li>
+            <li class="nav-item nav-3">
+              <a class="nav-link text-white" href="agregar-album">
+                Albums
+              </a>
+            </li>
             <li class="nav-item dropdown nav-4">
               <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
               <?php
@@ -78,6 +83,9 @@
                 <li class="nav-item">
                     <a href="#temas" class="nav-link" data-bs-toggle="tab">Temas</a>
                 </li>
+                <li class="nav-item">
+                    <a href="#albums" class="nav-link" data-bs-toggle="tab">Albums</a>
+                </li>
             </ul>
         </div>
         <div class="card-body">
@@ -99,6 +107,9 @@
                     <h5 class="card-title">Temas</h5>
                     <p>Para poder interactuar con todos los temas, como editar, eliminar y ver todos los atributos a detalle, <a href="tabla-temas">click aquí</a></p>
                 </div>
+                <div class="tab-pane fade" id="albums">
+                    <h5 class="card-title">Albums</h5>
+                    <p>Para poder interactuar con todos los albums, como editar, eliminar y ver todos los atributos a detalle, <a href="tabla-albums">click aquí</a></p>
             </div>
         </div>
     </div>

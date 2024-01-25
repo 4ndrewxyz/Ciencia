@@ -18,6 +18,7 @@ use Alansnow\Ciencia\controlador\Directorio;
 use Alansnow\Ciencia\controlador\vistaMarco;
 use Alansnow\Ciencia\controlador\MarcoLegal;
 use Alansnow\Ciencia\controlador\CompromisoGaleria;
+use Alansnow\Ciencia\controlador\TablaAlbums;
 
 $router = new \Bramus\Router\Router();
 
@@ -123,6 +124,16 @@ $router->get('agregar-temas', function() {
    $adminTemas->adminTemas();
 });
 
+$router->get('agregar-album', function() {
+   $TablaAlbums=new TablaAlbums();
+   $TablaAlbums->adminAlbums();
+});
+
+$router->get('tabla-albums', function() {
+   $TablaAlbums=new TablaAlbums();
+   $TablaAlbums->tablaAlbums();
+});
+
 $router->get('tabla-categoria', function() {
    $adminCategoria=new AdminCategoria();
    $adminCategoria->tablaCategoria();
@@ -158,6 +169,11 @@ $router->post('auth-contenido', function() {
    $adminContenido->agregarContenido($_POST,$_FILES);
 });
 
+$router->post('auth-album', function() {
+   $TablaAlbums=new TablaAlbums();
+   $TablaAlbums->agregarAlbum($_POST);
+});
+
 $router->post('auth-tema', function() {
    $adminTemas = new AdminTemas();
    $adminTemas->agregarTemas($_POST);
@@ -178,9 +194,19 @@ $router->post('editar-lenguas', function() {
    $adminLenguas->editarLenguas($_POST);
 });
 
+$router->post('editar-albums', function() {
+   $TablaAlbums=new TablaAlbums();
+   $TablaAlbums->editarAlbums($_POST);
+});
+
 $router->post('editar-temas', function() {
    $adminTemas = new AdminTemas();
    $adminTemas->editarTema($_POST);
+});
+
+$router->get('eliminar-album/{id}', function($id) {
+   $TablaAlbums=new TablaAlbums();
+   $TablaAlbums->eliminarAlbum(['id' => $id]);
 });
 
 $router->get('eliminar-categoria/{id}', function($id) {
