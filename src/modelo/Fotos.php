@@ -18,7 +18,7 @@ class Fotos {
     public function guardar($conectar, $albumId) {
         try {
             $consulta = $conectar->prepare("INSERT INTO fotos(id_album, file_path, upload_date)
-                VALUES(:id_album, :file_path, NOW())");
+            VALUES(:id_album, :file_path, NOW())");
             $consulta->bindValue(":id_album", $albumId);
             $consulta->bindValue(":file_path", $this->archivos); // Assuming archivo is the file path
             $consulta->execute();
