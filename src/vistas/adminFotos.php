@@ -96,7 +96,7 @@
     <form class="shadow-sm p-3 mb-5 bg-body-tertiary rounded" action="auth-fotos" method="post" enctype="multipart/form-data">
         <div class="mb-3">
             <label for="formFile" class="form-label">Contenido (IMG/JPG/PNG)</label>
-            <input class="form-control" name="archivo" type="file" id="formFile" required>
+            <input class="form-control" name="archivo" type="file" id="formFile" multiple required>
         </div>
 
         <div class="mb-3">
