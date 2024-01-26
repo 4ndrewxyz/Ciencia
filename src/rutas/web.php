@@ -19,6 +19,7 @@ use Alansnow\Ciencia\controlador\vistaMarco;
 use Alansnow\Ciencia\controlador\MarcoLegal;
 use Alansnow\Ciencia\controlador\CompromisoGaleria;
 use Alansnow\Ciencia\controlador\TablaAlbums;
+use Alansnow\Ciencia\controlador\AdminFotos;
 
 $router = new \Bramus\Router\Router();
 
@@ -129,6 +130,11 @@ $router->get('agregar-album', function() {
    $TablaAlbums->adminAlbums();
 });
 
+$router->get('agregar-fotos', function() {
+   $adminFotos=new AdminFotos();
+   $adminFotos->adminFotos();
+});
+
 $router->get('tabla-albums', function() {
    $TablaAlbums=new TablaAlbums();
    $TablaAlbums->tablaAlbums();
@@ -172,6 +178,11 @@ $router->post('auth-contenido', function() {
 $router->post('auth-album', function() {
    $TablaAlbums=new TablaAlbums();
    $TablaAlbums->agregarAlbum($_POST);
+});
+
+$router->post('auth-fotos', function() {
+   $AdminFotos=new AdminFotos();
+   $AdminFotos->agregarFotos($_POST, $_FILES);
 });
 
 $router->post('auth-tema', function() {

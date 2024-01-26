@@ -43,6 +43,11 @@
                 Albums
               </a>
             </li>
+            <li class="nav-item nav-3">
+              <a class="nav-link text-white" href="agregar-fotos">
+                Fotos
+              </a>
+            </li>
               <li class="nav-item dropdown nav-4">
                 <a class="nav-link dropdown-toggle text-white" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                 <?php
@@ -67,7 +72,7 @@
       <h2 class="text-center mb-5">Agregar album</h2>
         <div class="row">
         <section class="col-sm-12 col-md-6 col-lg-6 mb-5">
-                <p> En este apartado puedes agregar albums, para subir fotos, si ya creo un album, puedes subir fotos aqui, seleccionando el album que creo</p>
+                <p> En este apartado puedes agregar albums, para subir fotos, si ya creo un album. <br> </p> <a href="another.php"> puedes subir fotos aqui </a> <br>
                 <small>Nota: Cada album aparecera en el apartado de albums en compromiso social.</small>
                 <br><br>
                 <small>Nota 2: En caso de haber una equivocación, en la pagina de incio del administrador se muestran los enlaces para acceder a todos los albums en formato de tabla, donde se puede editar y/o eliminar.</small>
@@ -78,6 +83,8 @@
             <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Nombre del Album:</label>
               <input type="text" name="nombre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <label for="exampleInputEmail1" class="form-label">Descripción del album:</label>
+              <input type="text" name="descripcion" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
             </div>
             <button type="submit" name="agregar" class="btn btn-primary">Agregar</button>
 

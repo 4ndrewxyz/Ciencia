@@ -8,14 +8,16 @@ class Albums {
 
     private $id;
     private $nombre;
+    private $descripcion;
 
 
     public function agregarAlbum($conectar) {
         try {
             var_dump($this->nombre);
-            $consulta=$conectar->prepare("INSERT INTO albums(nombre)
-            VALUES(:nombre)");
+            $consulta=$conectar->prepare("INSERT INTO albums(nombre, descripcion)
+            VALUES(:nombre, :descripcion)");
             $consulta->bindValue(":nombre",$this->nombre);
+            $consulta->bindValue(":descripcion",$this->descripcion);
             $consulta->execute();
             return true;
         } catch (Exception $e) {
@@ -74,5 +76,9 @@ class Albums {
 
     public function getNombre() {
         return $this->nombre;
+    }
+
+    public function setDescripcion($descripcion) {
+         $this->descripcion = $descripcion;
     }
 }

@@ -22,6 +22,7 @@ class TablaAlbums {
                 $conectar=new Conexion();
     
                 $album->setNombre($respuesta['nombre']);
+                $album->setDescripcion($respuesta['descripcion']);
                 $album->agregarAlbum($conectar);
                 $msj = urlencode("Contenido cargado con éxito.");
                 return header("Location:agregar-album?msj=$msj");
