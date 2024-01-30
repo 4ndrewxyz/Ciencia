@@ -155,6 +155,11 @@ $router->get('tabla-lenguas', function() {
    $adminLenguas->tablaLenguas();
 });
 
+$router->get('tabla-fotos', function() {
+   $adminFotos=new AdminFotos();
+   $adminFotos->tablaFotos();
+});
+
 $router->get('tabla-temas', function() {
    $adminTemas = new AdminTemas();
    $adminTemas->tablaTemas();
@@ -210,6 +215,8 @@ $router->post('editar-albums', function() {
    $TablaAlbums->editarAlbums($_POST);
 });
 
+
+
 $router->post('editar-temas', function() {
    $adminTemas = new AdminTemas();
    $adminTemas->editarTema($_POST);
@@ -223,6 +230,11 @@ $router->get('eliminar-album/{id}', function($id) {
 $router->get('eliminar-categoria/{id}', function($id) {
    $adminCategoria=new AdminCategoria();
    $adminCategoria->eliminarCategoria(['id' => $id]);
+});
+
+$router->get('eliminar-foto/{id}', function($id) {
+   $AdminFotos=new AdminFotos();
+   $AdminFotos->eliminarFoto(['id' => $id]);
 });
 
 $router->get('eliminar-contenido/{id}', function($id) {

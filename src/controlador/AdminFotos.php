@@ -4,6 +4,8 @@ namespace Alansnow\Ciencia\controlador;
 use Alansnow\Ciencia\modelo\Fotos;
 use Alansnow\Ciencia\config\Conexion;
 use Alansnow\Ciencia\lib\Archivos;
+use PDO;
+use Exception;
 
 class AdminFotos {
 
@@ -55,9 +57,31 @@ class AdminFotos {
         }
     }
 
+    
+    
+    
+
+    
+    
+    
+
+    public function eliminarFoto($respuesta) {
+        
+        $album=new Fotos();
+        $conectar=new Conexion();
+
+        $album->setId($respuesta['id']);
 
 
-    public function tablaContenido() {
-        return require 'src/vistas/tablaContenido.php';
+            $album->eliminarFoto($conectar);
+            $msj = urlencode("Album eliminada correctamente.");
+            return header("Location:../tabla-fotos?msj=$msj");
+}
+
+
+
+
+    public function tablaFotos() {
+        return require 'src/vistas/tablafotos.php';
     }
 }

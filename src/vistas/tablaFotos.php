@@ -1,9 +1,8 @@
 <?php
-
-  use Alansnow\Ciencia\modelo\Lenguas;
   use Alansnow\Ciencia\config\Conexion;
+use Alansnow\Ciencia\modelo\Fotos;
 
-  $lenguas=new Lenguas();
+  $fotos=new Fotos();
   $conectar=new Conexion();
 ?>
 <!DOCTYPE html>
@@ -11,7 +10,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lenguas</title>
+    <title>Editar Fotos</title>
     <link rel="stylesheet" href="src/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
     <link rel="stylesheet" href="src/assets/css/admin.css">
@@ -49,7 +48,7 @@
               </a>
             </li>
             <li class="nav-item nav-3">
-              <a class="nav-link text-white" href="agregar-Albums">
+              <a class="nav-link text-white" href="agregar-album">
                 Albums
               </a>
             </li>
@@ -78,53 +77,58 @@
     </nav>
     
     <main class="container admin-ctn">
+      <h2 class="text-center mb-5">Tabla Fotos</h2>
+      <div class="mt-3">
+          <?php
+          if (isset($_GET['msj'])) {
+              $alerta = urldecode($_GET['msj']);
+              ?>
+              <p class="text-center"><?php echo $alerta; ?></p>
+              <?php 
+          }
+          ?>
+      </div>
+        <section>
+            <div class="card">
+                <div class="card-body">
+                    <div class="table-responsive">
+                        <table class="table" id="tabla">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Foto</th>
+                                    <th scope="col">Nombre del Álbum</th>
+                                    <th scope="col">Acciones</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                              
+                                <?php
+                                $resul = $fotos->obtenerFotos($conectar);
+                                foreach ($resul as $registro) {
+                                  $fotos->setId($registro['id']);
+                                  
+                                    ?>
+                                    <tr>
+                                        <td><img src="src/assets/multimedia/img/<?php echo $registro['archivo'];  ?>" alt="Proyecto 1" style="max-width: 100px; max-height: 100px;"></td>
+                                        <td><?php echo $registro['nombre_album']; ?></td>
+                                        <td>
 
-    <h2 class="text-center mb-5">Tabla lenguas</h2>
-    <div class="mt-3">
-                    <?php
-                      if (isset($_GET['msj'])) {
-                        $alerta = urldecode($_GET['msj']);
-                        ?>
-                        <p class="text-center"><?php echo $alerta; ?></p>
-                        <?php }?>
-                        
+                                        
+                                        <div class="btn-group" role="group" aria-label="Basic example">
+                                          <button data-id="<?php echo $fotos->getId(); ?>" id="btnEditar" type="button" class="btn btn-primary btnEditar" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                              Editar
+                                          </button>
+                                          <a href="eliminar-foto/<?php echo $fotos->getId(); ?>" type="button" class="btn btn-primary">Eliminar</a>
+                                      </div> 
+                                        </td>
+                                    </tr>
+                                <?php } ?>
+                            </tbody>
+                        </table>
                     </div>
-      <section>
-      <div class="card">
-  <div class="card-body">
-  <div class="table-responsive">
-                    <table class="table" id="tabla">
-  <thead>
-    <tr>
-      <th scope="col">Nombre</th>
-      <th scope="col">Acciones</th>
-    </tr>
-  </thead>
-  <tbody>
-    <?php
-      $resul=$lenguas->obtenerLenguas($conectar);
-      foreach ($resul as $registro) {
-        $lenguas->setId($registro['id']);
-        $lenguas->setNombre($registro['nombre']);
-    ?>
-    <tr>
-      <td><?php echo $lenguas->getNombre(); ?></td>
-      <td>
-      <div class="btn-group" role="group" aria-label="Basic example">
-      <button data-id="<?php echo $lenguas->getId(); ?>" id="btnEditar" type="button" class="btn btn-primary btnEditar" data-bs-toggle="modal" data-bs-target="#exampleModal">
-      Editar
-      </button>
-      <a href="eliminar-lenguas/<?php echo $lenguas->getId(); ?>" type="button" class="btn btn-primary">Eliminar</a>
-      </div> 
-      </td>
-    </tr>
-    <?php } ?>
-  </tbody>
-</table>
-                    </div>
-  </div>
-</div>
-      </section>
+                </div>
+            </div>
+        </section>
     </main>
 
     <!-- Modal -->
@@ -136,13 +140,14 @@
         <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
       </div>
       <div class="modal-body">
-      <form action="editar-lenguas" method="post">
-      <div id="formEditar"></div> 
+      <form action="editar-fotos" method="post">
+      <div id="formEditar"></div>
       <div class="mb-3">
-              <label for="exampleInputEmail1" class="form-label">Lengua:</label>
-              <input type="text" name="nombre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+      <label for="formFile" class="form-label">Contenido (IMG/JPG/PNG)</label>
+      <input class="form-control" name="archivo" type="file" id="formFile" required>
+                      
+      <input type="hidden" name="id" value="<?php echo $registro['id']; ?>">
             </div>
-                
                 <button type="submit" name="guardar" class="btn btn-primary">Guardar cambios</button>
             </form>
       </div>
