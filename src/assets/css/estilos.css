@@ -208,7 +208,7 @@ transition: all 2s ease;
 
 .img-header {
   display: block;
-  width: 70%;
+  width: 55%;
   filter: blur(100);
 }
 

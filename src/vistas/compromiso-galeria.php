@@ -1,9 +1,11 @@
 <?php
-  use Alansnow\Ciencia\modelo\Tema;
-  use Alansnow\Ciencia\config\Conexion;
-
-  $conectar = new Conexion();
-  $tema = new Tema();
+ use Alansnow\Ciencia\modelo\Tema;
+ use Alansnow\Ciencia\config\Conexion;
+ use Alansnow\Ciencia\modelo\Fotos;
+ $conectar = new Conexion();
+ $tema = new Tema();  
+ $fotos=new Fotos();
+ $conectar=new Conexion();
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -35,47 +37,42 @@
           <p class="text-center que-es">Ciencia abierta. Comunicación del conocimiento</p>        </div>
       </header>
 
-      <h1 id="titulo_galeria" class="titulo_galeria">Evento 10/09/23</h1>
-    <div class="gallery" onclick="openLightbox(event)">
-        <img src="https://assets.codepen.io/210284/flower-6.jpg"
-            alt="Image 1">
-        <img src="https://assets.codepen.io/210284/flower-7.jpg"
-            alt="Image 2">
-        <img src="https://assets.codepen.io/210284/flower-8.jpg"
-            alt="Image 3">
-        <p id="descripcion" class="descripcion">Descripción del evento que tuvo lugar en la Universidad Autónoma de Chiapas en la Biblioteca Central el día 10/09/23 con invitados especiales</p>
-    </div>
+      <?php
+$resul = $fotos->obtenerFotos($conectar);
+$currentAlbum = null;
 
-    <h1 class="titulo_galeria"> Evento 27/10/23</h1>
-    <div class="gallery" onclick="openLightbox(event)">
-        <img src="https://assets.codepen.io/210284/flower-9.jpg"
-            alt="Image 4">
-        <img src="https://assets.codepen.io/210284/flower-10.jpg"
-            alt="Image 5">
-        <img src="https://assets.codepen.io/210284/flower-6.jpg"
-            alt="Image 6">
-    
-        <img src="https://assets.codepen.io/210284/flower-3.jpg"
-            alt="Image 7">
-        <img src="https://assets.codepen.io/210284/flower-4.jpg"
-            alt="Image 8">
-        <img src="https://assets.codepen.io/210284/flower-5.jpg"
-            alt="Image 9">
-        <p id="descripcion" class="descripcion">Descripción del evento que tuvo lugar en la Universidad Autónoma de Chiapas en la Biblioteca Central el día 10/09/23 con invitados especiales</p>
+foreach ($resul as $registro) {
+    $fotos->setId($registro['id']);
 
-    </div>
+    // Check if the album name has changed
+    if ($currentAlbum != $registro['nombre_album']) {
+        // Print the album name if it has changed
+        if ($currentAlbum !== null) {
+            echo '</div>'; // Close the previous album's div
+            echo '<p class="descripcion">' . $currentDescripcion . '</p>';
+        }
+        echo '<h1 id="titulo_galeria" class="titulo_galeria">' . $registro['nombre_album'] . '</h1>';
+        echo '<div class="gallery" onclick="openLightbox(event)">';
+        $currentAlbum = $registro['nombre_album'];
+        $currentDescripcion = $registro['descripcion']; // Save the current album's description
+    }
 
-    <h1 class="titulo_galeria"> Evento 14/11/23</h1>
-    <div class="gallery" onclick="openLightbox(event)">
-        <img src="https://assets.codepen.io/210284/flower-6.jpg"
-            alt="Image 1">
-        <img src="https://assets.codepen.io/210284/flower-7.jpg"
-            alt="Image 2">
-        <img src="https://assets.codepen.io/210284/flower-8.jpg"
-            alt="Image 3">
-        <p id="descripcion" class="descripcion">Descripción del evento que tuvo lugar en la Universidad Autónoma de Chiapas en la Biblioteca Central el día 10/09/23 con invitados especiales</p>
+    // Print the photo for the current album
+    echo '<img src="src/assets/multimedia/img/' . $registro['archivo'] . '" alt="Image 1">';
+}
 
-    </div>
+// Close the last album's div and display the last album's description
+if ($currentAlbum !== null) {
+    echo '</div>';
+    echo '<p class="descripcion">' . $currentDescripcion . '</p>';
+}
+
+?>
+      
+
+
+
+
     
     <!-- Lightbox container -->
     <div id="lightbox">
@@ -97,7 +94,7 @@
 
 
 <?php include 'footer.php'; ?>
-      
+    
       <script src="src/assets/js/bootstrap.bundle.min.js"></script>
       <script src="src/assets/js/navbar.js"></script>
       <script src="src/assets/js/galeria.js"></script>

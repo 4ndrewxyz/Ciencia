@@ -18,7 +18,9 @@
 
   .descripcion{
     font-family: 'DM Sans', sans-serif;
-    padding-top: 7vh;
+    padding-top: 2vh;
+    align-items: center;
+    text-align: center;
   }
 
   .descripcion-eclipse{
@@ -26,6 +28,15 @@
     padding-top: 7vh;
     color: rgb(240, 240, 240);
   }
+
+  /* Agregar a tu archivo de estilos CSS */
+.gallery.show-all-photos img:nth-child(n+10) {
+    display: block;
+}
+.gallery:not(.show-all-photos) img:nth-child(n+10) {
+    display: none;
+}
+
 
 
 /* Basic styling for the gallery */
@@ -45,6 +56,7 @@
         }
 
         .gallery {
+            margin-top: -3vh;
             display: flex;
             flex-wrap: wrap;
             justify-content: center;
@@ -54,8 +66,10 @@
         .gallery img {
             margin: 10px;
             cursor: pointer;
+            min-width: 300px;
+            min-height: 225px;
             max-width: 300px;
-            max-height: 250px;
+            max-height: 225px;
             width: 50%;
             height: 50%;
             border-radius: 10px;
@@ -88,7 +102,7 @@
 
         #close-btn {
             padding-left: 90vw;
-            margin-top: 29vh;
+            margin-top: 5vh;
             font-size: 65px;
             color: #fff;
             cursor: pointer;
@@ -133,13 +147,14 @@
             justify-content: center;
         }
         .thumbnail {
-            max-width: 50px;
-            width: 100px;
+            height: 45px;
+            width: 70px;
             cursor: pointer;
-            margin-top: 40px;
+            margin-top: 12px;
             margin-left: 5px;
             margin-right: 5px;
             border: 2px solid #fff;
+            object-fit: cover;
             transition: opacity 0.3s;
         }
 

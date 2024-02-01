@@ -28,9 +28,10 @@ class Albums {
 
     public function editarAlbums($conectar) {
         try {
-            $consulta=$conectar->prepare("UPDATE albums SET nombre=:nombre WHERE id=:id");          
+            $consulta=$conectar->prepare("UPDATE albums SET nombre=:nombre, descripcion=:descripcion WHERE id=:id");          
             $consulta->bindValue(":id",$this->id);
-            $consulta->bindValue(":nombre",$this->nombre);                        
+            $consulta->bindValue(":nombre",$this->nombre);      
+            $consulta->bindValue(":descripcion",$this->descripcion);                                          
             $consulta->execute();
             return true;        
         } catch (Exception $e) {
@@ -51,7 +52,7 @@ class Albums {
 
     public function obtenerAlbums($conectar) {
         try {
-            $consulta=$conectar->prepare("SELECT id,nombre FROM albums"); 
+            $consulta=$conectar->prepare("SELECT id,nombre,descripcion FROM albums"); 
             $consulta->execute();
             $consulta->setFetchMode(PDO::FETCH_ASSOC);
             return $consulta->fetchAll();          
@@ -80,5 +81,9 @@ class Albums {
 
     public function setDescripcion($descripcion) {
          $this->descripcion = $descripcion;
+    }
+
+    public function getDescripcion() {
+        return $this->descripcion;
     }
 }

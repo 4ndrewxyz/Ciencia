@@ -97,6 +97,7 @@
                           <thead>
                               <tr>
                                   <th scope="col">Nombre del Álbum</th>
+                                  <th scope="col">Descripción</th>
                                   <th scope="col">Acciones</th>
                               </tr>
                           </thead>
@@ -105,10 +106,12 @@
                                         $resul=$albums->obtenerAlbums($conectar);
                                         foreach ($resul as $registro) {
                                           $albums->setId($registro['id']);
+                                          $albums->setDescripcion($registro['descripcion']);
                                           $albums->setNombre($registro['nombre']);
                               ?>
                               <tr>
                                   <td><?php echo $albums->getNombre(); ?></td>
+                                  <td><?php echo $albums->getDescripcion(); ?> </td>
                                   <td>
                                       <div class="btn-group" role="group" aria-label="Basic example">
                                           <button data-id="<?php echo $albums->getId(); ?>" id="btnEditar" type="button" class="btn btn-primary btnEditar" data-bs-toggle="modal" data-bs-target="#exampleModal">
@@ -143,6 +146,8 @@
       <div class="mb-3">
               <label for="exampleInputEmail1" class="form-label">Album:</label>
               <input type="text" name="nombre" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
+              <label for="exampleInputEmail1" class="form-label">Descripción del album:</label>
+              <input type="text" name="descripcion" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" required>
             </div>
                 
                 <button type="submit" name="guardar" class="btn btn-primary">Guardar cambios</button>

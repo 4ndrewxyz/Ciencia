@@ -34,10 +34,13 @@ class Fotos {
     public function obtenerFotos($conectar) {
         try {
             $consulta = $conectar->prepare("
-                SELECT f.id, f.id_album, f.archivo, a.nombre AS nombre_album
-                FROM fotos f
-                JOIN albums a ON f.id_album = a.id
-            "); 
+             SELECT f.id, f.id_album, f.archivo, a.nombre AS nombre_album, a.descripcion
+             FROM fotos f
+             JOIN albums a ON f.id_album = a.id
+             ORDER BY f.id_album, f.upload_date
+            ");
+
+
             $consulta->execute();
             $consulta->setFetchMode(PDO::FETCH_ASSOC);
             return $consulta->fetchAll();          

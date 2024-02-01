@@ -41,6 +41,7 @@ class TablaAlbums {
 
                 $album->setId($respuesta['id']);
                 $album->setNombre($respuesta['nombre']);
+                $album->setDescripcion($respuesta['descripcion']);
 
                 $album->editarAlbums($conectar);
                 $msj = urlencode("Cambios realizados correctamente.");

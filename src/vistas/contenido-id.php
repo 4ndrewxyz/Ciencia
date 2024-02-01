@@ -22,7 +22,7 @@ $contenido=new Contenido();
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Ciencia abierta para la comunicación del conocimiento</title>
+    <title>Ciencia abierta. Comunicación del conocimiento</title>
     <link rel="stylesheet" href="../src/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="../src/assets/css/estilos.css">
     <link rel="stylesheet" href="../src/assets/css/contenido.css">
