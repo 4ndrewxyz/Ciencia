@@ -37,6 +37,8 @@
           <p class="text-center que-es">Ciencia abierta. Comunicación del conocimiento</p>        </div>
       </header>
 
+
+
       <?php
 $resul = $fotos->obtenerFotos($conectar);
 $currentAlbum = null;
@@ -44,29 +46,28 @@ $currentAlbum = null;
 foreach ($resul as $registro) {
     $fotos->setId($registro['id']);
 
-    // Check if the album name has changed
+    // Checa si cambio el nombre del album
     if ($currentAlbum != $registro['nombre_album']) {
-        // Print the album name if it has changed
+        // Imprime el nombre del album si cambio
         if ($currentAlbum !== null) {
-            echo '</div>'; // Close the previous album's div
+            echo '</div>'; // Cierra la seccion del album
             echo '<p class="descripcion">' . $currentDescripcion . '</p>';
         }
         echo '<h1 id="titulo_galeria" class="titulo_galeria">' . $registro['nombre_album'] . '</h1>';
-        echo '<div class="gallery" onclick="openLightbox(event)">';
+        echo '<div class="gallery ' . str_replace(' ', '_', $registro['nombre_album']) . '" onclick="openLightbox(event, \'' . $registro['nombre_album'] . '\')">';
         $currentAlbum = $registro['nombre_album'];
-        $currentDescripcion = $registro['descripcion']; // Save the current album's description
+        $currentDescripcion = $registro['descripcion']; // Guarda la descripcion actual
     }
 
-    // Print the photo for the current album
-    echo '<img src="src/assets/multimedia/img/' . $registro['archivo'] . '" alt="Image 1">';
+    // Imprime foto del album actual
+    echo '<img src="src/assets/multimedia/img/' . $registro['archivo'] . '" alt="Image 1" data-album="' . $registro['nombre_album'] . '">';
 }
 
-// Close the last album's div and display the last album's description
+// Cierra la ultima seccion de album, con la descripcion
 if ($currentAlbum !== null) {
     echo '</div>';
     echo '<p class="descripcion">' . $currentDescripcion . '</p>';
 }
-
 ?>
       
 
