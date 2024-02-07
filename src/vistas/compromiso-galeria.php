@@ -39,7 +39,7 @@
 
 
 
-      <?php
+<?php
 $resul = $fotos->obtenerFotos($conectar);
 $currentAlbum = null;
 
@@ -83,6 +83,8 @@ if ($currentAlbum !== null) {
         <!-- Main lightbox image -->
         <img id="lightbox-img" src="" alt="lightbox image">
 
+        <?php echo '<p id="counter" class="counter"></p>' ?>
+
         <!-- Thumbnails container -->
         <div id="thumbnail-container">
             <!-- Thumbnails will be added dynamically using JavaScript -->
@@ -95,7 +97,7 @@ if ($currentAlbum !== null) {
 
 
 <?php include 'footer.php'; ?>
-    
+
       <script src="src/assets/js/bootstrap.bundle.min.js"></script>
       <script src="src/assets/js/navbar.js"></script>
       <script src="src/assets/js/galeria.js"></script>

@@ -36,6 +36,9 @@ let currentIndex = 0;
             // Update the main lightbox image
             lightboxImg.src = images[currentIndex].src;
 
+            counter.textContent = ` ${currentIndex + 1}/${totalImages}`;
+
+
             // Clear existing thumbnails
             thumbnailContainer.innerHTML = '';
 
