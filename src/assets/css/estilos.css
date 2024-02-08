@@ -347,6 +347,13 @@ a {
   gap: 10px;
 }
 
+.foot-txt a:hover {
+  display: flex;
+  color: #FFA500;
+  flex-direction: column;
+  gap: 10px;
+}
+
 .foot-txt a {
   text-decoration: none;
   color: white;
