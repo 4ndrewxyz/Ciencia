@@ -13,7 +13,8 @@
       </button>
       <div class="collapse navbar-collapse" id="navbar-toggler">
         <a class="navbar-brand logo-nav" href="./">
-          <img src="src/assets/img/Cienciaabierta2blancovertical.png" width="65" alt="../src/assets/img/Cienciaabierta2blanco.png">
+        <img class="desktop-logo" src="src/assets/img/Cienciaabierta2blancovertical.png" width="65" alt="../src/assets/img/Cienciaabierta2blanco.png">
+        <img class="mobile-logo" src="src/assets/img/logo_cedes.png" width="65" alt="../src/assets/img/Cienciaabierta2blanco.png">
         </a>
         <ul class="navbar-nav d-flex justify-content-center align-items-center opciones-nav">
         <li class="nav-item dropdown nav-4">

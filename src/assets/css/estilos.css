@@ -54,6 +54,9 @@ transition: all 2s ease;
   transition: transform 0.3s ease;
 }
 
+.mobile-logo{
+  display: none;
+}
 
 
 .unach_50 {
@@ -546,9 +549,55 @@ background: linear-gradient(90deg, rgba(255,102,0,1) 0%, rgba(0,0,0,1) 52%);
     grid-template-columns: 1fr 1fr;
   }
 
+  .mobile-logo{
+    display: inline-block;
+    position: relative;
+    width: 250px;
+    margin-right: 10vw;
+    padding: -20vh;
+    padding-top: 12px;
+    padding-bottom: 20px;
+  }
+
+  .desktop-logo{
+    display: none;
+  }
+
+
+  .unach_50{
+    width: 6.5vw;
+    height: auto;
+    margin-left: 320px;
+    margin-top: -497px;
+  }
+
+  .logo_cedes {
+    width: 10.5vw;
+    height: auto;
+    margin-left: 270px;
+    margin-top: -550px;
+  }
+
   .seccion-grilla img {
     width: 250px;
     height: 200px;
+  }
+
+  .que-t {
+    font-family: 'Helvetica', Courier, monospace;
+    font-style: oblique;
+    font-size: 9vw;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
+    z-index: 1;
+  }
+
+  .que-es {
+    font-family: 'Helvetica', Courier, monospace;
+    font-style: oblique;
+    font-size: 5vw;
+    font-weight: 900;
+    color: rgb(255, 255, 255);
   }
   
   .overlay p {
