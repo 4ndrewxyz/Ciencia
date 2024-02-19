@@ -1,0 +1,70 @@
+.statistic-section {
+    padding-top: 200px;
+    padding-bottom: 340px;
+    background: #f3f3f3;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #e4e4e4, #f8f8f8);
+    background: linear-gradient(to right, #ffffff, #e7e7e7); 
+}
+
+.count-title {
+   font-size: 50px;
+   font-weight: normal;
+   margin-top: 10px;
+   margin-bottom: 0;
+     text-align: center;
+     font-weight: bold;
+   color: #424242;
+}
+
+.fecha-title {
+    font-size: 27px;
+    font-weight: normal;
+    margin-top: 10px;
+    margin-bottom: 0;
+      text-align: center;
+      font-weight: bold;
+    color: #424242;
+ }
+
+.stats-text {
+   font-size: 15px;
+   font-weight: normal;
+   margin-top: 15px;
+   margin-bottom: 0;
+   text-align: center;
+     color: #3a3a3a;
+     text-transform: uppercase;
+     font-weight: bold;
+}
+
+.stats-line-black {
+   margin: 12px auto 0;
+   width: 55px;
+   height: 2px;
+   background-color: #383838;
+}
+.stats-icon {
+     font-size: 35px;
+     margin: 0 auto;
+   float: none;
+   display: table;
+   color: #303030;
+}
+
+@media (max-width: 992px) {
+   .counter {
+       margin-bottom: 40px;
+   }
+}.text-center {
+    display: flex;
+    justify-content: space-around; /* Adjust as needed */
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.header {
+    flex: 0 0 auto;
+    width: 25%; /* Adjust the width for the desired layout */
+    padding: 15px;
+    text-align: center;
+}

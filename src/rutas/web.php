@@ -20,6 +20,7 @@ use Alansnow\Ciencia\controlador\MarcoLegal;
 use Alansnow\Ciencia\controlador\CompromisoGaleria;
 use Alansnow\Ciencia\controlador\TablaAlbums;
 use Alansnow\Ciencia\controlador\AdminFotos;
+use Alansnow\Ciencia\controlador\adminVisitas;
 
 $router = new \Bramus\Router\Router();
 
@@ -104,6 +105,11 @@ $router->get('/login', function() {
    $admin=new Admin();
    $admin->menuAdmin();
 }); 
+
+$router->get('admin-visitas', function(){
+   $visitas=new AdminVisitas();
+   $visitas->vistaVisitas();
+});
 
 $router->get('agregar-contenido', function() {
    $contenido=new AdminContenido();
@@ -214,8 +220,6 @@ $router->post('editar-albums', function() {
    $TablaAlbums=new TablaAlbums();
    $TablaAlbums->editarAlbums($_POST);
 });
-
-
 
 $router->post('editar-temas', function() {
    $adminTemas = new AdminTemas();
