@@ -8,6 +8,21 @@
   $conectar=new Conexion();
   $contenidos=new Contenido();
   $tema = new Tema();
+
+  //get ip of visitor
+  function getVisitorIP() {
+    return $_SERVER['REMOTE_ADDR'];
+  }
+  $visitorIP = getVisitorIP();
+
+  // Connect to the database
+  // Save the visitor's IP address to the database
+ //$conectar->query("INSERT INTO visitantes (IP, Time) VALUES ('$visitorIP', NOW())");
+
+
+
+
+ 
 ?>
 <!DOCTYPE html>
 <html lang="es">

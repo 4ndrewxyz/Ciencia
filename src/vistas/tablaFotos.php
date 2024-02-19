@@ -48,11 +48,6 @@ use Alansnow\Ciencia\modelo\Fotos;
               </a>
             </li>
             <li class="nav-item nav-3">
-              <a class="nav-link text-white" href="agregar-album">
-                Albums
-              </a>
-            </li>
-            <li class="nav-item nav-3">
               <a class="nav-link text-white" href="agregar-fotos">
                 Fotos
               </a>

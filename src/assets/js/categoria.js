@@ -7,7 +7,7 @@ lengua.addEventListener('input', (e) => {
     fetchDataById(id);
 })
 
-const apiUrl = 'http://localhost/ciencia/categorias'; // Reemplaza esta URL con la URL de tu API
+const apiUrl = 'http://localhost/Alansnow/Ciencia/categorias'; // Reemplaza esta URL con la URL de tu API
 
 function fetchDataById(id) {
   const url = `${apiUrl}/${id}`;

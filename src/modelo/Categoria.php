@@ -60,6 +60,18 @@ class Categoria {
         }
     }
 
+    public function obtenerCategorias($conectar) {
+        try {
+            $consulta=$conectar->prepare("SELECT titulo FROM categorias"); 
+            $consulta->execute();
+            $consulta->setFetchMode(PDO::FETCH_ASSOC);
+            return $consulta->fetchAll();          
+        } catch (Exception $e) {
+            return 0;
+        }
+    }
+    
+
     public function obtenerArchivo($conectar) {
         try {
             $consulta=$conectar->prepare("SELECT archivo FROM categorias WHERE id=:id"); 

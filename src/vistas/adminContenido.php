@@ -51,12 +51,7 @@
             </li>
             <li class="nav-item nav-3">
               <a class="nav-link text-white" href="agregar-album">
-                Albums
-              </a>
-            </li>
-            <li class="nav-item nav-3">
-              <a class="nav-link text-white" href="agregar-fotos">
-                Fotos
+                albums
               </a>
             </li>
             <li class="nav-item dropdown nav-4">

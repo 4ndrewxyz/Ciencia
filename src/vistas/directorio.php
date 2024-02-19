@@ -52,16 +52,16 @@
             <img class="team-img" src="src/assets/img/doctora_andrea.png">
           </div>
           <p class="text-blk name">
-          Dra. Andrea Mena Álvarez
+          Dra. Andrea Mena <br> Álvarez
           </p>
           <p class="text-blk position">
           Coordinadora General del <br> CEDES
           </p>
           <div class="social-media-links">
-            <a href="http://www.twitter.com/" target="_blank">
+            <a href="https://twitter.com/cedesunach" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
             </a>
-            <a href="http://www.facebook.com/" target="_blank">
+            <a href="https://www.facebook.com/unachcedes/" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
             </a>
             <a href="http://www.instagram.com/" target="_blank">
@@ -85,10 +85,10 @@
           Creadora del proyecto Ciencia Abierta para la Comunicación del Conocimiento
           </p>
           <div class="social-media-links">
-            <a href="http://www.twitter.com/" target="_blank">
+            <a href="https://twitter.com/cedesunach" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
             </a>
-            <a href="http://www.facebook.com/" target="_blank">
+            <a href="https://www.facebook.com/unachcedes/" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
             </a>
             <a href="http://www.instagram.com/" target="_blank">
@@ -106,16 +106,43 @@
             <img class="team-img" src="src/assets/img/alan_img.jpg">
           </div>
           <p class="text-blk name">
-          Alan de Jesús Gómez Vera
+          Alan de Jesús Gómez <br> Vera
           </p>
           <p class="text-blk position">
-          Desarrollador del proyecto Ciencia Abierta para la Comunicación del Conocimient
+          Desarrollador original del proyecto Ciencia Abierta para la Comunicación del Conocimiento
           </p>
           <div class="social-media-links">
-            <a href="http://www.twitter.com/" target="_blank">
+            <a href="https://twitter.com/cedesunach" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
             </a>
-            <a href="http://www.facebook.com/" target="_blank">
+            <a href="https://www.facebook.com/unachcedes/" target="_blank">
+              <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
+            </a>
+            <a href="http://www.instagram.com/" target="_blank">
+              <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-insta.svg">
+            </a>
+            <a href="http://www.gmail.com/" target="_blank">
+              <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-mail.svg">
+            </a>
+          </div>
+        </div>
+      </div>
+      <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
+        <div class="team-card">
+          <div class="img-wrapper">
+            <img class="team-img" src="src/assets/img/alan_img.jpg">
+          </div>
+          <p class="text-blk name">
+          Bryan Andrew Castro Valencia
+          </p>
+          <p class="text-blk position">
+          Desarrollador de Seguimiento del Proyecto Ciencia Abierta para la Comunicación del Conocimiento
+          </p>
+          <div class="social-media-links">
+            <a href="https://twitter.com/cedesunach" target="_blank">
+              <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
+            </a>
+            <a href="https://www.facebook.com/unachcedes/" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
             </a>
             <a href="http://www.instagram.com/" target="_blank">
@@ -139,10 +166,10 @@
           Jefe del Departamento de Atención a Grupos Étnicos (DAGE) ICHEJA
           </p>
           <div class="social-media-links">
-            <a href="http://www.twitter.com/" target="_blank">
+            <a href="https://twitter.com/cedesunach" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
             </a>
-            <a href="http://www.facebook.com/" target="_blank">
+            <a href="https://www.facebook.com/unachcedes/" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
             </a>
             <a href="http://www.instagram.com/" target="_blank">
@@ -166,10 +193,10 @@
           Director de Comunicación del Conocimiento
           </p>
           <div class="social-media-links">
-            <a href="http://www.twitter.com/" target="_blank">
+            <a href="https://twitter.com/cedesunach" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
             </a>
-            <a href="http://www.facebook.com/" target="_blank">
+            <a href="https://www.facebook.com/unachcedes/" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
             </a>
             <a href="http://www.instagram.com/" target="_blank">
@@ -193,10 +220,10 @@
           Creadora del proyecto Ciencia Abierta para la Comunicación del Conocimiento
           </p>
           <div class="social-media-links">
-            <a href="http://www.twitter.com/" target="_blank">
+            <a href="https://twitter.com/cedesunach" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-twitter.svg">
             </a>
-            <a href="http://www.facebook.com/" target="_blank">
+            <a href="https://www.facebook.com/unachcedes/" target="_blank">
               <img src="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/gray-fb.svg">
             </a>
             <a href="http://www.instagram.com/" target="_blank">
