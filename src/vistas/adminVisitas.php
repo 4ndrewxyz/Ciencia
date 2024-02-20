@@ -6,12 +6,13 @@
   $visitas = new Visitas();
   $conectar = new Conexion();
   ?>
+  
   <!DOCTYPE html>
   <html lang="en">
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <title>Álbums</title>
+      <title>Visitas</title>
       <link rel="stylesheet" href="src/assets/css/bootstrap.min.css">
       <link rel="stylesheet" href="//cdn.datatables.net/1.13.6/css/jquery.dataTables.min.css">
       <link rel="stylesheet" href="src/assets/css/admin.css">
@@ -130,9 +131,13 @@
     </div>
 </div>
 </section>
-  
 
-<img src="/src/assets/img/globe.png" alt="">
+<div class="globe">
+    <a href="https://example.com">
+        <img class="image" src="src/assets/img/globe.webp" alt="Clickable Globe">
+    </a>
+</div>
+
 
 
 

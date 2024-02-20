@@ -1,9 +1,9 @@
 .statistic-section {
     padding-top: 200px;
-    padding-bottom: 340px;
+    padding-bottom: 100px;
     background: #f3f3f3;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #e4e4e4, #f8f8f8);
-    background: linear-gradient(to right, #ffffff, #e7e7e7); 
+    background: -webkit-linear-gradient(top, #d4d4d4, #ffffff);
+    background: linear-gradient(to bottom, #e4e4e4, #ffffff); 
 }
 
 .count-title {
@@ -49,6 +49,26 @@
    float: none;
    display: table;
    color: #303030;
+}
+
+.image{
+    max-width: 200px;
+    display: flex;
+    justify-content: center;
+    transition: transform 0.5s ease;
+
+}
+.globe{
+    display: inline-block; /* Change to inline-block */
+    position: absolute; /* Position the div */
+    left: 43%; /* Align to the horizontal center */
+    align-items: center;
+    transition: transform 0.5s ease;
+}
+
+.globe:hover {
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
 }
 
 @media (max-width: 992px) {
