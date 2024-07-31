@@ -9,7 +9,7 @@
   $contenidos=new Contenido();
   $tema = new Tema();
 
-  //get ip of visitor
+  //obtener ip del visitante
   function getVisitorIP() {
     return $_SERVER['REMOTE_ADDR'];
   }
@@ -125,7 +125,7 @@
             <path fill-rule="evenodd" d="M2 2a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4a2 2 0 0 0-2-2H2ZM1 4a1 1 0 0 1 1-1h12a1 1 0 0 1 1 1v8a1 1 0 0 1-1 1H2a1 1 0 0 1-1-1V4Zm7.5.5a.5.5 0 0 0-1 0v7a.5.5 0 0 0 1 0v-7ZM2 5.5a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5Zm0 2a.5.5 0 0 1 .5-.5H6a.5.5 0 0 1 0 1H2.5a.5.5 0 0 1-.5-.5ZM10.5 5a.5.5 0 0 0-.5.5v3a.5.5 0 0 0 .5.5h3a.5.5 0 0 0 .5-.5v-3a.5.5 0 0 0-.5-.5h-3ZM13 8h-2V6h2v2Z"/>
           </svg>
       </h2>
-
+      <!-- Para mostrar las categorias mas recientes -->
       <section class="seccion-grilla">
       <?php
         $resultado=$categorias->ultimasCategoriasCombinadas($conectar);
@@ -148,7 +148,7 @@
       <section>
         <script type="text/javascript" src="//rf.revolvermaps.com/0/0/6.js?i=5eu6nvqrqif&amp;m=7&amp;c=e63100&amp;cr1=ffffff&amp;f=arial&amp;l=0&amp;bv=90&amp;lx=-420&amp;ly=420&amp;hi=20&amp;he=7&amp;hc=a8ddff&amp;rs=80" async="async"></script>
       </section>
-
+      <!-- los logos que muestran abajo de la pagina -->
       <div class="marquesina-ctn">
         <div class="marquesinas">
             <img class="marquesina-img-uno" src="src/assets/img/CEDES-color-oficial_transp Negro.png" alt="Imagen 1">
@@ -166,11 +166,10 @@
     </button>
 
 <?php include 'footer.php'; ?>
-    
+    <script src="/src/"></script>
     <script src="src/assets/js/bootstrap.bundle.min.js"></script>
     <script src="src/assets/js/modoEclipse.js"></script>
     <script src="src/assets/js/navbar.js"></script>
     <script src="src/assets/js/btnSubir.js"></script>
-    <script src="script.js"></script>
 </body>
 </html>

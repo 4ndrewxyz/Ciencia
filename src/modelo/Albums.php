@@ -10,7 +10,7 @@ class Albums {
     private $nombre;
     private $descripcion;
 
-
+    # para agregar albums en la tabla de albums
     public function agregarAlbum($conectar) {
         try {
             var_dump($this->nombre);
@@ -25,7 +25,7 @@ class Albums {
         }
     }  
 
-
+    ## funcion para editar albums en la tabla de albums
     public function editarAlbums($conectar) {
         try {
             $consulta=$conectar->prepare("UPDATE albums SET nombre=:nombre, descripcion=:descripcion WHERE id=:id");          
@@ -38,7 +38,7 @@ class Albums {
             return $e;
         }
     }
-
+    # funcion para eliminar albums en la tabla de albums
     public function eliminarAlbums($conectar) {
         try {
             $consulta = $conectar->prepare("DELETE FROM albums WHERE id=:id");
@@ -49,7 +49,7 @@ class Albums {
             return $e;
         }
     }
-
+    #funcion para obtener y mostrar todos los albums en la tabla de albums
     public function obtenerAlbums($conectar) {
         try {
             $consulta=$conectar->prepare("SELECT id,nombre,descripcion FROM albums"); 
@@ -62,6 +62,7 @@ class Albums {
     }
 
     // Otras funciones similares a las originales según sea necesario
+    # para obtener valores de los formularios
 
     public function setId($id) {
         $this->id = $id;

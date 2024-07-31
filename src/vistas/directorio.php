@@ -49,13 +49,13 @@
       <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
         <div class="team-card">
           <div class="img-wrapper">
-            <img class="team-img" src="src/assets/img/doctora_andrea.png">
+            <img class="team-img" src="src/assets/img/dr.jpg">
           </div>
           <p class="text-blk name">
-          Dra. Andrea Mena <br> Álvarez
+          Dr. Manuel Iván <br> Espinosa Gallegos
           </p>
           <p class="text-blk position">
-          Coordinadora General del <br> CEDES
+          Coordinador General del <br> CEDES
           </p>
           <div class="social-media-links">
             <a href="https://twitter.com/cedesunach" target="_blank">
@@ -130,7 +130,7 @@
       <div class="responsive-cell-block wk-desk-3 wk-ipadp-3 wk-tab-6 wk-mobile-12 team-card-container">
         <div class="team-card">
           <div class="img-wrapper">
-            <img class="team-img" src="src/assets/img/alan_img.jpg">
+          <img class="team-img" src="src/assets/img/andrew.jpeg">
           </div>
           <p class="text-blk name">
           Bryan Andrew Castro Valencia
